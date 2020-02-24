@@ -15,6 +15,8 @@ opt = docopt(__doc__)
 
 def main(number):
   number = int(number)
+  if number < 0:
+    raise Exception("input number should bot be negative")
   print(math.sqrt(number))
     
 
